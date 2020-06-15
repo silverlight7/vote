@@ -2,16 +2,16 @@
 <!-- drakov -f ./vote.md -p 3000 -->
 
 
-hello world
+投票接口文档
 
-## 消息 [/messages]
+<!-- ## 消息 [/messages]
 
 ### 获取消息 [GET]
 
 + Response 200 (application/json)
 {
   "hello": "world"
-}
+} -->
 
 ## 投票 [/vote/v1/get]
 
@@ -34,11 +34,20 @@ hello world
 ### 获取投票列表 [POST]
 
 + Parameters
-    + key (string,required) - 关键字搜索,字符串
-    + voteId (string,required) - 投票编号,字符串 必填
-    + sort (string,required) - 排序,字符串 
-    + start (numberl,required) - 开始位置, 整型 必填
-    + count (numberl,required) - 每页显示条数, 整型  必填
+  + key (string,required) - 关键字搜索,字符串
+  + voteId (string,required) - 投票编号,字符串 必填
+  + sort (string,required) - 排序,字符串 
+  + start (numberl,required) - 开始位置, 整型 必填
+  + count (numberl,required) - 每页显示条数, 整型  必填
+   
++ Request (application/json)
+{
+  "key":"",
+  "voteId":"1",
+  "sort": "",
+  "start":0,
+  "count":10
+}
 
 + Response 200 (application/json)
 {
