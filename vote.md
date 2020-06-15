@@ -13,6 +13,34 @@
   "hello": "world"
 } -->
 
+## 创建投票 [/vote/v1/create]
+
+### 创建投票 [POST]
+
++ Parameters
+  + title (string,required) - 标题,字符串 必填
+  + description (string,required) - 描述,字符串
+  + endTime (long,required) - 截止时间, 长整形 必填
+  + medias (string,required) - 媒体, 字符串 
+  + creatorId (string,required) - 创建人id, 字符串 必填
+  + creatorName (string,required) - 创建人名称, 字符串 必填
+   
++ Request (application/json)
+{
+  "title":"闪亮童年，云秀风采",
+  "description":"",
+  "endTime":123131387974,
+  "medias":"",
+  "creatorId":"",
+  "creatorName":""
+}
+
++ Response 200 (application/json)
+{
+
+}
+
+
 ## 投票 [/vote/v1/get]
 
 ### 获取投票详情 [GET]
@@ -25,7 +53,7 @@
   "id":"1",
   "title":"闪亮童年，云秀风采",
   "endTime":"2020-09-11T02:09:11.000+0000",
-  "endTime":"2020-09-11T02:09:11.000+0000",
+  "description":"",
   "medias":"",
   "visiteCount":1001232,
   "totalVoteCount":989829,
