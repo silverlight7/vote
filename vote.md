@@ -17,6 +17,9 @@
 
 ### 获取投票详情 [GET]
 
++ Parameters
+  + id (string,required) - 投票id,字符串 必填
+
 + Response 200 (application/json)
 {
   "id":"1",
