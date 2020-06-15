@@ -24,7 +24,6 @@ hello world
   "endTime":"2020-09-11T02:09:11.000+0000"
 }
 
-
 ## 投票列表 [/vote/v1/get_list]
 
 ### 获取投票列表 [POST]
@@ -39,7 +38,10 @@ hello world
   "content":{
     "id":"1",
     "title":"闪亮童年，云秀风采",
-    "endTime":"2020-09-11T02:09:11.000+0000"
+    "description":"闪亮童年，云秀风采,投票活动开始啦，快来参加吧！！！",
+    "endTime":"2020-09-11T02:09:11.000+0000",
+    "medias":"",
+    "visiteCount":1001232
   },
   "pageable": {
       "sort": {
