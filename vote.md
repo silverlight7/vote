@@ -24,7 +24,9 @@ hello world
   "endTime":"2020-09-11T02:09:11.000+0000",
   "endTime":"2020-09-11T02:09:11.000+0000",
   "medias":"",
-  "visiteCount":1001232
+  "visiteCount":1001232,
+  "totalVoteCount":989829,
+  "SignUpCount":36
 }
 
 ## 投票列表 [/vote/v1/get_list]
