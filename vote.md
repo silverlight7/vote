@@ -94,7 +94,6 @@
 
   + voteStartTime (long,required) - 投票开始时间, 长整形 必填
   + voteEndTime (long,required) - 投票结束时间, 长整形 必填
-  + endTime (long,required) - 截止时间, 长整形 必填
 
   + joinStartTime (long,required) - 报名开始时间, 长整形
   + joinEndTime (long,required) -  报名结束时间, 长整形
