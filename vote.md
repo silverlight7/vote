@@ -13,6 +13,68 @@
   "hello": "world"
 } -->
 
+
+## 获取主题 [/vote/v1/get_subjects]
+
+### 获取主题 [GET]
+
++ Response 200 (application/json)
+[{
+  "id":"1",
+  "name":"默认"
+},{
+  "id":"2",
+  "name":"儿童"
+},{
+  "id":"3",
+  "name":"宠物"
+},{
+  "id":"4”,
+  "name":"爱国"
+},{
+  "id":"5",
+  "name":"中秋"
+},{
+  "id":"6",
+  "name":"春节"
+}
+]
+
+
+
+## 获取配色 [/vote/v1/get_colors]
+
+### 获取配色 [GET]
+
++ Response 200 (application/json)
+[{
+  "id":"1",
+  "name":"模板-蓝"
+},{
+  "id":"2",
+  "name":"模板-红"
+},{
+  "id":"3",
+  "name":"模板-绿"
+},{
+  "id":"4”,
+  "name":"模板-橘"
+},{
+  "id":"5",
+  "name":"模板-黑金"
+},{
+  "id":"6",
+  "name":"模板-白蓝"
+},{
+  "id":"7",
+  "name":"模板-橘红"
+},{
+  "id":"8",
+  "name":"模板-酒红"
+}
+]
+
+
 ## 创建投票 [/vote/v1/create]
 
 ### 创建投票 [POST]
@@ -24,6 +86,7 @@
   + medias (string,required) - 媒体, 字符串 
   + creatorId (string,required) - 创建人id, 字符串 必填
   + creatorName (string,required) - 创建人名称, 字符串 必填
+  + carousels (string,required) - 轮播图, 字符串 必填
    
 + Request (application/json)
 {
