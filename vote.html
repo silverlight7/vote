@@ -54,19 +54,83 @@
 }
 ]</code></pre><div style="height: 1px;"></div></div></div></div></div><div id="创建投票" class="resource"><h3 class="resource-heading">创建投票 <a href="#创建投票" class="permalink">&nbsp;&para;</a></h3><div id="创建投票-post" class="action post"><h4 class="action-heading"><div class="name">创建投票</div><a href="#创建投票-post" class="method post">POST</a><code class="uri">/vote/v1/create</code></h4><h4>Example URI</h4><div class="definition"><span class="method post">POST</span>&nbsp;<span class="uri"><span class="hostname"></span>/vote/v1/create</span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>title</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>标题,字符串 必填</p>
 </dd><dt>description</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>描述,字符串</p>
-</dd><dt>endTime</dt><dd><code>long</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>截止时间, 长整形 必填</p>
-</dd><dt>medias</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>媒体, 字符串</p>
+</dd><dt>medias</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>媒体元素, 字符串</p>
 </dd><dt>creatorId</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>创建人id, 字符串 必填</p>
 </dd><dt>creatorName</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>创建人名称, 字符串 必填</p>
 </dd><dt>carousels</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>轮播图, 字符串 必填</p>
+</dd><dt>shareMedias</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>分享图片, 字符串</p>
+</dd><dt>subjectId</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>主题id, 字符串</p>
+</dd><dt>subjectName</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>主题名称, 字符串</p>
+</dd><dt>colorId</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>配色id, 字符串</p>
+</dd><dt>colorName</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>配色名称, 字符串</p>
+</dd><dt>voteStartTime</dt><dd><code>long</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>投票开始时间, 长整形 必填</p>
+</dd><dt>voteEndTime</dt><dd><code>long</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>投票结束时间, 长整形 必填</p>
+</dd><dt>endTime</dt><dd><code>long</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>截止时间, 长整形 必填</p>
+</dd><dt>joinStartTime</dt><dd><code>long</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>报名开始时间, 长整形</p>
+</dd><dt>joinEndTime</dt><dd><code>long</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>报名结束时间, 长整形</p>
+</dd><dt>requireName</dt><dd><code>int</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>所需名称, 整形（0:必填,1:选填,2:隐藏） 必填</p>
+</dd><dt>requirePhoto</dt><dd><code>int</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>所需图片, 整形（0:必填,1:选填,2:隐藏） 必填</p>
+</dd><dt>requireVideo</dt><dd><code>int</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>所需短视频（90s内）,整形（0:必填,1:选填,2:隐藏） 必填</p>
+</dd><dt>requirePhone</dt><dd><code>int</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>所需手机号, 整形（0:必填,1:选填,2:隐藏） 必填</p>
+</dd><dt>requireWechat</dt><dd><code>int</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>所需微信号, 整形（0:必填,1:选填,2:隐藏） 必填</p>
+</dd><dt>sponsorName</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>主办方名称, 字符串</p>
+</dd><dt>sponsorLogo</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>主办方logo, 字符串</p>
+</dd><dt>sponsorPhone</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>主办方联系电话, 字符串</p>
+</dd><dt>sponsor2Code</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>主办方二维码, 字符串</p>
+</dd><dt>voteTimesType</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>投票类型, 字符串（total，everyday）</p>
+</dd><dt>voteTimes</dt><dd><code>int</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>投票次数, 整形</p>
+</dd><dt>selectBeginCount</dt><dd><code>int</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>多选开始数量, 整形</p>
+</dd><dt>selectEndCount</dt><dd><code>int</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>多选结束数量, 整形</p>
+</dd><dt>limitProvince</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>限定省, 字符串</p>
+</dd><dt>limitCity</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>限定市, 字符串</p>
+</dd><dt>limitArea</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>限定区, 字符串</p>
+</dd><dt>limitIpVoteTimes</dt><dd><code>int</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>每天同一ip可投次数, 整形</p>
+</dd><dt>drawLuck</dt><dd><code>boolean</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>是否发起抽奖, boolean</p>
+</dd><dt>activityNotice</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>活动公告, 字符串</p>
 </dd></dl></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
-  "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"闪亮童年，云秀风采"</span></span>,
-  "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
-  "<span class="hljs-attribute">endTime</span>": <span class="hljs-value"><span class="hljs-number">123131387974</span></span>,
-  "<span class="hljs-attribute">medias</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
-  "<span class="hljs-attribute">creatorId</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
-  "<span class="hljs-attribute">creatorName</span>": <span class="hljs-value"><span class="hljs-string">""</span>
-</span>}</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{}</code></pre><div style="height: 1px;"></div></div></div></div></div><div id="我创建的投票" class="resource"><h3 class="resource-heading">我创建的投票 <a href="#我创建的投票" class="permalink">&nbsp;&para;</a></h3><div id="我创建的投票-post" class="action post"><h4 class="action-heading"><div class="name">获取我创建的投票列表</div><a href="#我创建的投票-post" class="method post">POST</a><code class="uri">/vote/v1/get_my_list</code></h4><h4>Example URI</h4><div class="definition"><span class="method post">POST</span>&nbsp;<span class="uri"><span class="hostname"></span>/vote/v1/get_my_list</span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>key</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>关键字搜索,字符串</p>
+<span class="hljs-string">"title"</span>:<span class="hljs-string">"闪亮童年，云秀风采"</span>,
+<span class="hljs-string">"description"</span>:<span class="hljs-string">""</span>,
+<span class="hljs-string">"medias"</span>:<span class="hljs-string">""</span>,
+<span class="hljs-string">"creatorId"</span>:<span class="hljs-string">""</span>,
+<span class="hljs-string">"creatorName"</span>:<span class="hljs-string">""</span>,
+<span class="hljs-string">"carousels"</span>:<span class="hljs-string">""</span>,
+<span class="hljs-string">"shareMedias"</span>:<span class="hljs-string">""</span>,
+
+<span class="hljs-string">"subjectId"</span>:<span class="hljs-string">""</span>,
+<span class="hljs-string">"subjectName"</span>:<span class="hljs-string">""</span>,
+ <span class="hljs-string">"colorId"</span>:<span class="hljs-string">""</span>,
+<span class="hljs-string">"colorName"</span>:<span class="hljs-string">""</span>,
+
+<span class="hljs-string">"voteStartTime"</span>,<span class="hljs-number">0</span>,
+<span class="hljs-string">"voteEndTime"</span>,<span class="hljs-number">0</span>,
+
+<span class="hljs-string">"joinStartTime"</span>,<span class="hljs-number">0</span>,
+<span class="hljs-string">"joinEndTime"</span>,<span class="hljs-string">""</span>,
+
+<span class="hljs-string">"requireName"</span>,<span class="hljs-number">0</span>,
+<span class="hljs-string">"requirePhoto"</span>,<span class="hljs-number">0</span>,
+<span class="hljs-string">"requireVideo"</span>,<span class="hljs-number">0</span>,
+<span class="hljs-string">"requirePhone"</span>,<span class="hljs-number">0</span>,
+<span class="hljs-string">"requireWechat"</span>,<span class="hljs-number">0</span>,
+
+<span class="hljs-string">"sponsorName"</span>,<span class="hljs-string">""</span>,
+<span class="hljs-string">"sponsorLogo"</span>,<span class="hljs-string">""</span>,
+<span class="hljs-string">"sponsorPhone"</span>,<span class="hljs-string">""</span>,
+<span class="hljs-string">"sponsor2Code"</span>,<span class="hljs-string">""</span>,
+<span class="hljs-string">"voteTimesType"</span>,<span class="hljs-string">""</span>,
+<span class="hljs-string">"voteTimes"</span>,<span class="hljs-number">0</span>,
+
+<span class="hljs-string">"selectBeginCount"</span>,<span class="hljs-number">0</span>,
+<span class="hljs-string">"selectEndCount"</span>,<span class="hljs-number">0</span>,
+
+<span class="hljs-string">"limitProvince"</span>,<span class="hljs-string">""</span>,
+<span class="hljs-string">"limitCity"</span>,<span class="hljs-string">""</span>,
+<span class="hljs-string">"limitArea"</span>,<span class="hljs-string">""</span>,
+<span class="hljs-string">"limitIpVoteTimes"</span>,
+
+<span class="hljs-string">"drawLuck"</span>,<span class="hljs-literal">false</span>,
+<span class="hljs-string">"activityNotice"</span>,<span class="hljs-string">""</span>,
+}</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{}</code></pre><div style="height: 1px;"></div></div></div></div></div><div id="我创建的投票" class="resource"><h3 class="resource-heading">我创建的投票 <a href="#我创建的投票" class="permalink">&nbsp;&para;</a></h3><div id="我创建的投票-post" class="action post"><h4 class="action-heading"><div class="name">获取我创建的投票列表</div><a href="#我创建的投票-post" class="method post">POST</a><code class="uri">/vote/v1/get_my_list</code></h4><h4>Example URI</h4><div class="definition"><span class="method post">POST</span>&nbsp;<span class="uri"><span class="hostname"></span>/vote/v1/get_my_list</span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>key</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>关键字搜索,字符串</p>
 </dd><dt>userId</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>投票编号,字符串 必填</p>
 </dd><dt>sort</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>排序,字符串</p>
 </dd><dt>start</dt><dd><code>numberl</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>开始位置, 整型 必填</p>

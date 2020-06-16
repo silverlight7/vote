@@ -82,20 +82,98 @@
 + Parameters
   + title (string,required) - 标题,字符串 必填
   + description (string,required) - 描述,字符串
-  + endTime (long,required) - 截止时间, 长整形 必填
-  + medias (string,required) - 媒体, 字符串 
+  + medias (string,required) - 媒体元素, 字符串 
   + creatorId (string,required) - 创建人id, 字符串 必填
   + creatorName (string,required) - 创建人名称, 字符串 必填
   + carousels (string,required) - 轮播图, 字符串 必填
+  + shareMedias (string,required) - 分享图片, 字符串 
+  + subjectId (string,required) - 主题id, 字符串 
+  + subjectName (string,required) - 主题名称, 字符串 
+  + colorId (string,required) - 配色id, 字符串 
+  + colorName (string,required) - 配色名称, 字符串 
+
+  + voteStartTime (long,required) - 投票开始时间, 长整形 必填
+  + voteEndTime (long,required) - 投票结束时间, 长整形 必填
+  + endTime (long,required) - 截止时间, 长整形 必填
+
+  + joinStartTime (long,required) - 报名开始时间, 长整形
+  + joinEndTime (long,required) -  报名结束时间, 长整形
+
+  + requireName (int,required) -  所需名称, 整形（0:必填,1:选填,2:隐藏） 必填
+  + requirePhoto (int,required) -  所需图片, 整形（0:必填,1:选填,2:隐藏） 必填
+  + requireVideo (int,required) -  所需短视频（90s内）,整形（0:必填,1:选填,2:隐藏） 必填
+  + requirePhone (int,required) -  所需手机号, 整形（0:必填,1:选填,2:隐藏） 必填
+  + requireWechat (int,required) -  所需微信号, 整形（0:必填,1:选填,2:隐藏） 必填
+
+  + sponsorName (string,required) - 主办方名称, 字符串 
+  + sponsorLogo (string,required) - 主办方logo, 字符串 
+  + sponsorPhone (string,required) - 主办方联系电话, 字符串 
+  + sponsor2Code (string,required) - 主办方二维码, 字符串 
+
+  + voteTimesType (string,required) - 投票类型, 字符串（total，everyday）
+  + voteTimes  (int,required) - 投票次数, 整形
+
+  + selectBeginCount  (int,required) - 多选开始数量, 整形
+  + selectEndCount  (int,required) - 多选结束数量, 整形
+
+  + limitProvince (string,required) - 限定省, 字符串
+  + limitCity (string,required) - 限定市, 字符串
+  + limitArea (string,required) - 限定区, 字符串
+
+  + limitIpVoteTimes  (int,required) - 每天同一ip可投次数, 整形
+  
+  + drawLuck (boolean,required) - 是否发起抽奖, boolean
+  + activityNotice (string,required) - 活动公告, 字符串
+  
+
+
    
 + Request (application/json)
 {
   "title":"闪亮童年，云秀风采",
   "description":"",
-  "endTime":123131387974,
   "medias":"",
   "creatorId":"",
-  "creatorName":""
+  "creatorName":"",
+  "carousels":"",
+  "shareMedias":"",
+
+  "subjectId":"",
+  "subjectName":"",
+  
+  "colorId":"",
+  "colorName":"",
+
+  "voteStartTime",0,
+  "voteEndTime",0,
+
+  "joinStartTime",0,
+  "joinEndTime","",
+
+  "requireName",0,
+  "requirePhoto",0,
+  "requireVideo",0,
+  "requirePhone",0,
+  "requireWechat",0,
+
+  "sponsorName","",
+  "sponsorLogo","",
+  "sponsorPhone","",
+  "sponsor2Code","",
+  "voteTimesType","",
+  "voteTimes",0,
+
+  "selectBeginCount",0,
+  "selectEndCount",0,
+
+  "limitProvince","",
+  "limitCity","",
+  "limitArea","",
+  "limitIpVoteTimes",
+
+  "drawLuck",false,
+  "activityNotice","",
+  
 }
 
 + Response 200 (application/json)
