@@ -365,8 +365,8 @@
   + phone (string,required) -  所需手机号, 字符串
   + wechat (string,required) -  所需微信号, 字符串
 
-  + playerId (string,required) - 参加人id,字符串
-  + playerName (string,required) - 参加人名称,字符串
+  + userId (string,required) - 参加人id,字符串
+  + userName (string,required) - 参加人名称,字符串
    
 + Request (application/json)
 {
@@ -376,8 +376,8 @@
   "video":"",
   "phone":"",
   "wechat":"",
-  "playerId":"",
-  "playerName":""
+  "userId":"",
+  "userName":""
 }
 
 + Response 200 (application/json)
@@ -481,6 +481,36 @@
   "number": 0,
   "numberOfElements": 10,
   "empty": false
+}
+
+
+
+
+
+## 我要投票 [/vote/v1/vote]
+
+### 我要投票 [POST]
+
++ Parameters
+
+  + voteId (string,required) - 投票编号,字符串 必填
+  + playerIds (string,required) - 投票报名编号(多个逗号隔开),字符串 必填
+  + voterId (string,required) - 投票人id,字符串 必填
+  + voterName (string,required) - 投票人名称,字符串 必填
+  + ip (string,required) - ip地址,字符串  必填
+
+   
++ Request (application/json)
+{
+  "voteId":"1",
+  "playerIds":"",
+  "voterId":"",
+  "voterName":"",
+  "ip":""
+}
+
++ Response 200 (application/json)
+{
 }
 
 
