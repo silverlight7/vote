@@ -144,35 +144,35 @@
   "colorId":"",
   "colorName":"",
 
-  "voteStartTime",0,
-  "voteEndTime",0,
+  "voteStartTime":0,
+  "voteEndTime":0,
 
-  "joinStartTime",0,
-  "joinEndTime","",
+  "joinStartTime":0,
+  "joinEndTime":"",
 
-  "requireName",0,
-  "requirePhoto",0,
-  "requireVideo",0,
-  "requirePhone",0,
-  "requireWechat",0,
+  "requireName":0,
+  "requirePhoto":0,
+  "requireVideo":0,
+  "requirePhone":0,
+  "requireWechat":0,
 
-  "sponsorName","",
-  "sponsorLogo","",
-  "sponsorPhone","",
-  "sponsor2Code","",
-  "voteTimesType","",
-  "voteTimes",0,
+  "sponsorName":"",
+  "sponsorLogo":"",
+  "sponsorPhone":"",
+  "sponsor2Code":"",
+  "voteTimesType":"",
+  "voteTimes":0,
 
-  "selectBeginCount",0,
-  "selectEndCount",0,
+  "selectBeginCount":0,
+  "selectEndCount":0,
 
-  "limitProvince","",
-  "limitCity","",
-  "limitArea","",
-  "limitIpVoteTimes",
+  "limitProvince":"",
+  "limitCity":"",
+  "limitArea":"",
+  "limitIpVoteTimes":0,
 
-  "drawLuck",false,
-  "activityNotice",""
+  "drawLuck":false,
+  "activityNotice":""
   
 }
 
@@ -190,14 +190,14 @@
   + key (string,required) - 关键字搜索,字符串
   + userId (string,required) - 投票编号,字符串 必填
   + sort (string,required) - 排序,字符串 
-  + start (numberl,required) - 开始位置, 整型 必填
-  + count (numberl,required) - 每页显示条数, 整型  必填
+  + start (int,required) - 开始位置, 整型 必填
+  + count (int,required) - 每页显示条数, 整型  必填
    
 + Request (application/json)
 {
   "key":"",
   "userId":"1",
-  "sort": "",
+  "sort":"",
   "start":0,
   "count":10
 }
@@ -332,7 +332,7 @@
 
 
 
-## 投票 [/vote/v1/get]
+## 获取投票 [/vote/v1/get]
 
 ### 获取投票详情 [GET]
 
@@ -351,17 +351,57 @@
   "SignUpCount":36
 }
 
-## 参与投票列表 [/vote/v1/get_players]
 
-### 获取参与投票列表 [POST]
+## 参加投票 [/vote/v1/join]
+
+### 参加投票 [POST]
 
 + Parameters
-  + key (string,required) - 关键字搜索,字符串
   + voteId (string,required) - 投票编号,字符串 必填
-  + sort (string,required) - 排序,字符串 
-  + start (numberl,required) - 开始位置, 整型 必填
-  + count (numberl,required) - 每页显示条数, 整型  必填
+  
+  + name (string,required) -  所需名称, 字符串 必填
+  + photo (string,required) -  所需图片, 字符串（0:必填,1:选填,2:隐藏） 必填
+  + video (string,required) -  所需短视频（90s内）,字符串
+  + phone (string,required) -  所需手机号, 字符串
+  + wechat (string,required) -  所需微信号, 字符串
+
+  + playerId (string,required) - 参加人id,字符串
+  + playerName (string,required) - 参加人名称,字符串
    
++ Request (application/json)
+{
+  "voteId":"1",
+  "name":"",
+  "photo":"",
+  "video":"",
+  "phone":"",
+  "wechat":"",
+  "playerId":"",
+  "playerName":""
+}
+
++ Response 200 (application/json)
+{
+}
+
+
+
+
+
+
+
+
+## 获取投票参与者列表 [/vote/v1/get_players]
+
+### 获取投票参与者列表 [POST]
+
++ Parameters
+  + key (string,required) - 关键字搜索, 字符串
+  + voteId (string,required) - 投票编号, 字符串 必填
+  + sort (string,required) - 排序, 字符串 
+  + start (int,required) - 开始位置, 整型 必填
+  + count (int,required) - 每页显示条数, 整型  必填
+
 + Request (application/json)
 {
   "key":"",
