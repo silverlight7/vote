@@ -208,17 +208,95 @@
     {
       "id":"1",
       "title":"闪亮童年，云秀风采",
-      "endTime":"2020-09-11T02:09:11.000+0000",
       "description":"",
       "medias":"",
+      "creatorId":"",
+      "creatorName":"",
+      "carousels":"",
+      "shareMedias":"",
+
+      "subjectId":"",
+      "subjectName":"",
+      
+      "colorId":"",
+      "colorName":"",
+
+      "voteStartTime",0,
+      "voteEndTime",0,
+
+      "joinStartTime",0,
+      "joinEndTime","",
+
+      "requireName",0,
+      "requirePhoto",0,
+      "requireVideo",0,
+      "requirePhone",0,
+      "requireWechat",0,
+
+      "sponsorName","",
+      "sponsorLogo","",
+      "sponsorPhone","",
+      "sponsor2Code","",
+      "voteTimesType","",
+      "voteTimes",0,
+
+      "selectBeginCount",0,
+      "selectEndCount",0,
+
+      "limitProvince","",
+      "limitCity","",
+      "limitArea","",
+      "limitIpVoteTimes",
+
+      "drawLuck",false,
+      "activityNotice","",
       "createTime":"2020-09-11T02:09:11.000+0000"
     },
      {
       "id":"2",
       "title":"闪亮童年，云秀风采",
-      "endTime":"2020-09-11T02:09:11.000+0000",
       "description":"",
       "medias":"",
+      "creatorId":"",
+      "creatorName":"",
+      "carousels":"",
+      "shareMedias":"",
+
+      "subjectId":"",
+      "subjectName":"",
+      
+      "colorId":"",
+      "colorName":"",
+
+      "voteStartTime",0,
+      "voteEndTime",0,
+
+      "joinStartTime",0,
+      "joinEndTime","",
+
+      "requireName",0,
+      "requirePhoto",0,
+      "requireVideo",0,
+      "requirePhone",0,
+      "requireWechat",0,
+
+      "sponsorName","",
+      "sponsorLogo","",
+      "sponsorPhone","",
+      "sponsor2Code","",
+      "voteTimesType","",
+      "voteTimes",0,
+
+      "selectBeginCount",0,
+      "selectEndCount",0,
+
+      "limitProvince","",
+      "limitCity","",
+      "limitArea","",
+      "limitIpVoteTimes",
+
+      "drawLuck",false,
+      "activityNotice","",
       "createTime":"2020-09-11T02:09:11.000+0000"
     }
 
