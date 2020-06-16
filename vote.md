@@ -172,7 +172,7 @@
   "limitIpVoteTimes",
 
   "drawLuck",false,
-  "activityNotice","",
+  "activityNotice",""
   
 }
 
