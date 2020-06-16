@@ -214,41 +214,53 @@
       "carousels":"",
       "shareMedias":"",
 
-      "subjectId":"",
-      "subjectName":"",
+      "subject":{
+        "id":"",
+        "name":""
+      },
       
-      "colorId":"",
-      "colorName":"",
+      "color":{
+        "id":"",
+        "name":""
+      },
+      "voteTime":{
+        "begin":0,
+        "end":0
+      },
+      "joinTime":{
+        "begin":0,
+        "end":0
+      },
+      "require":{
+        "name":0,
+        "photo":0,
+        "video":0,
+        "phone":0,
+        "wechat":0
+      },
+      "sponsor":{
+        "name":"",
+        "logo":"",
+        "phone":"",
+        "twoCode":""
+      },
+      "voteTimes":{
+        "voteTimesType":"",
+        "voteTimes":0
+      },
+      "selector":{
+        selectBeginCount":0,
+        "selectEndCount":0
+      },
+      "address":{
+        "province":"",
+        "city":"",
+        "area":""
+      },
 
-      "voteStartTime",0,
-      "voteEndTime",0,
-
-      "joinStartTime",0,
-      "joinEndTime","",
-
-      "requireName",0,
-      "requirePhoto",0,
-      "requireVideo",0,
-      "requirePhone",0,
-      "requireWechat",0,
-
-      "sponsorName","",
-      "sponsorLogo","",
-      "sponsorPhone","",
-      "sponsor2Code","",
-      "voteTimesType","",
-      "voteTimes",0,
-
-      "selectBeginCount",0,
-      "selectEndCount",0,
-
-      "limitProvince","",
-      "limitCity","",
-      "limitArea","",
-      "limitIpVoteTimes",
-
-      "drawLuck",false,
-      "activityNotice","",
+      "limitIpVoteTimes":0,
+      "drawLuck":false,
+      "activityNotice":"",
       "createTime":"2020-09-11T02:09:11.000+0000"
     },
      {
@@ -261,41 +273,53 @@
       "carousels":"",
       "shareMedias":"",
 
-      "subjectId":"",
-      "subjectName":"",
+      "subject":{
+        "id":"",
+        "name":""
+      },
       
-      "colorId":"",
-      "colorName":"",
+      "color":{
+        "id":"",
+        "name":""
+      },
+      "voteTime":{
+        "begin":0,
+        "end":0
+      },
+      "joinTime":{
+        "begin":0,
+        "end":0
+      },
+      "require":{
+        "name":0,
+        "photo":0,
+        "video":0,
+        "phone":0,
+        "wechat":0
+      },
+      "sponsor":{
+        "name":"",
+        "logo":"",
+        "phone":"",
+        "twoCode":""
+      },
+      "voteTimes":{
+        "voteTimesType":"",
+        "voteTimes":0
+      },
+      "selector":{
+        selectBeginCount":0,
+        "selectEndCount":0
+      },
+      "address":{
+        "province":"",
+        "city":"",
+        "area":""
+      },
 
-      "voteStartTime",0,
-      "voteEndTime",0,
-
-      "joinStartTime",0,
-      "joinEndTime","",
-
-      "requireName",0,
-      "requirePhoto",0,
-      "requireVideo",0,
-      "requirePhone",0,
-      "requireWechat",0,
-
-      "sponsorName","",
-      "sponsorLogo","",
-      "sponsorPhone","",
-      "sponsor2Code","",
-      "voteTimesType","",
-      "voteTimes",0,
-
-      "selectBeginCount",0,
-      "selectEndCount",0,
-
-      "limitProvince","",
-      "limitCity","",
-      "limitArea","",
-      "limitIpVoteTimes",
-
-      "drawLuck",false,
-      "activityNotice","",
+      "limitIpVoteTimes":0,
+      "drawLuck":false,
+      "activityNotice":"",
       "createTime":"2020-09-11T02:09:11.000+0000"
     }
 
@@ -341,13 +365,67 @@
 + Response 200 (application/json)
 {
   "id":"1",
-  "title":"闪亮童年，云秀风采",
-  "endTime":"2020-09-11T02:09:11.000+0000",
-  "description":"",
-  "medias":"",
+  
   "visiteCount":1001232,
   "totalVoteCount":989829,
   "SignUpCount":36
+
+  "title":"闪亮童年，云秀风采",
+  "description":"",
+  "medias":"",
+  "creatorId":"",
+  "creatorName":"",
+  "carousels":"",
+  "shareMedias":"",
+
+  "subject":{
+    "id":"",
+    "name":""
+  },
+  
+  "color":{
+    "id":"",
+    "name":""
+  },
+  "voteTime":{
+    "begin":0,
+    "end":0
+  },
+  "joinTime":{
+    "begin":0,
+    "end":0
+  },
+  "require":{
+    "name":0,
+    "photo":0,
+    "video":0,
+    "phone":0,
+    "wechat":0
+  },
+  "sponsor":{
+    "name":"",
+    "logo":"",
+    "phone":"",
+    "twoCode":""
+  },
+  "voteTimes":{
+    "voteTimesType":"",
+    "voteTimes":0
+  },
+  "selector":{
+    selectBeginCount":0,
+    "selectEndCount":0
+  },
+  "address":{
+    "province":"",
+    "city":"",
+    "area":""
+  },
+
+  "limitIpVoteTimes":0,
+  "drawLuck":false,
+  "activityNotice":"",
+  "createTime":"2020-09-11T02:09:11.000+0000"
 }
 
 

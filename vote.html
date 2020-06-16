@@ -65,7 +65,6 @@
 </dd><dt>colorName</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>配色名称, 字符串</p>
 </dd><dt>voteStartTime</dt><dd><code>long</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>投票开始时间, 长整形 必填</p>
 </dd><dt>voteEndTime</dt><dd><code>long</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>投票结束时间, 长整形 必填</p>
-</dd><dt>endTime</dt><dd><code>long</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>截止时间, 长整形 必填</p>
 </dd><dt>joinStartTime</dt><dd><code>long</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>报名开始时间, 长整形</p>
 </dd><dt>joinEndTime</dt><dd><code>long</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>报名结束时间, 长整形</p>
 </dd><dt>requireName</dt><dd><code>int</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>所需名称, 整形（0:必填,1:选填,2:隐藏） 必填</p>
@@ -134,137 +133,214 @@
   "<span class="hljs-attribute">start</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
   "<span class="hljs-attribute">count</span>": <span class="hljs-value"><span class="hljs-number">10</span>
 </span>}</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
-<span class="hljs-string">"content"</span>:[
+"content":[
 {
-  <span class="hljs-string">"id"</span>:<span class="hljs-string">"1"</span>,
-  <span class="hljs-string">"title"</span>:<span class="hljs-string">"闪亮童年，云秀风采"</span>,
-  <span class="hljs-string">"description"</span>:<span class="hljs-string">""</span>,
-  <span class="hljs-string">"medias"</span>:<span class="hljs-string">""</span>,
-  <span class="hljs-string">"creatorId"</span>:<span class="hljs-string">""</span>,
-  <span class="hljs-string">"creatorName"</span>:<span class="hljs-string">""</span>,
-  <span class="hljs-string">"carousels"</span>:<span class="hljs-string">""</span>,
-  <span class="hljs-string">"shareMedias"</span>:<span class="hljs-string">""</span>,
+  "id":"1",
+  "title":"闪亮童年，云秀风采",
+  "description":"",
+  "medias":"",
+  "creatorId":"",
+  "creatorName":"",
+  "carousels":"",
+  "shareMedias":"",
 
-  <span class="hljs-string">"subjectId"</span>:<span class="hljs-string">""</span>,
-  <span class="hljs-string">"subjectName"</span>:<span class="hljs-string">""</span>,
-   <span class="hljs-string">"colorId"</span>:<span class="hljs-string">""</span>,
-  <span class="hljs-string">"colorName"</span>:<span class="hljs-string">""</span>,
+  "subject":{
+    "id":"",
+    "name":""
+  },
+   "color":{
+    "id":"",
+    "name":""
+  },
+  "voteTime":{
+    "begin":0,
+    "end":0
+  },
+  "joinTime":{
+    "begin":0,
+    "end":0
+  },
+  "require":{
+    "name":0,
+    "photo":0,
+    "video":0,
+    "phone":0,
+    "wechat":0
+  },
+  "sponsor":{
+    "name":"",
+    "logo":"",
+    "phone":"",
+    "twoCode":""
+  },
+  "voteTimes":{
+    "voteTimesType":"",
+    "voteTimes":0
+  },
+  "selector":{
+    selectBeginCount":0,
+    "selectEndCount":0
+  },
+  "address":{
+    "province":"",
+    "city":"",
+    "area":""
+  },
 
-  <span class="hljs-string">"voteStartTime"</span>,<span class="hljs-number">0</span>,
-  <span class="hljs-string">"voteEndTime"</span>,<span class="hljs-number">0</span>,
-
-  <span class="hljs-string">"joinStartTime"</span>,<span class="hljs-number">0</span>,
-  <span class="hljs-string">"joinEndTime"</span>,<span class="hljs-string">""</span>,
-
-  <span class="hljs-string">"requireName"</span>,<span class="hljs-number">0</span>,
-  <span class="hljs-string">"requirePhoto"</span>,<span class="hljs-number">0</span>,
-  <span class="hljs-string">"requireVideo"</span>,<span class="hljs-number">0</span>,
-  <span class="hljs-string">"requirePhone"</span>,<span class="hljs-number">0</span>,
-  <span class="hljs-string">"requireWechat"</span>,<span class="hljs-number">0</span>,
-
-  <span class="hljs-string">"sponsorName"</span>,<span class="hljs-string">""</span>,
-  <span class="hljs-string">"sponsorLogo"</span>,<span class="hljs-string">""</span>,
-  <span class="hljs-string">"sponsorPhone"</span>,<span class="hljs-string">""</span>,
-  <span class="hljs-string">"sponsor2Code"</span>,<span class="hljs-string">""</span>,
-  <span class="hljs-string">"voteTimesType"</span>,<span class="hljs-string">""</span>,
-  <span class="hljs-string">"voteTimes"</span>,<span class="hljs-number">0</span>,
-
-  <span class="hljs-string">"selectBeginCount"</span>,<span class="hljs-number">0</span>,
-  <span class="hljs-string">"selectEndCount"</span>,<span class="hljs-number">0</span>,
-
-  <span class="hljs-string">"limitProvince"</span>,<span class="hljs-string">""</span>,
-  <span class="hljs-string">"limitCity"</span>,<span class="hljs-string">""</span>,
-  <span class="hljs-string">"limitArea"</span>,<span class="hljs-string">""</span>,
-  <span class="hljs-string">"limitIpVoteTimes"</span>,
-
-  <span class="hljs-string">"drawLuck"</span>,<span class="hljs-literal">false</span>,
-  <span class="hljs-string">"activityNotice"</span>,<span class="hljs-string">""</span>,
-  <span class="hljs-string">"createTime"</span>:<span class="hljs-string">"2020-09-11T02:09:11.000+0000"</span>
+  "limitIpVoteTimes":0,
+  "drawLuck":false,
+  "activityNotice":"",
+  "createTime":"2020-09-11T02:09:11.000+0000"
 },
  {
-  <span class="hljs-string">"id"</span>:<span class="hljs-string">"2"</span>,
-  <span class="hljs-string">"title"</span>:<span class="hljs-string">"闪亮童年，云秀风采"</span>,
-  <span class="hljs-string">"description"</span>:<span class="hljs-string">""</span>,
-  <span class="hljs-string">"medias"</span>:<span class="hljs-string">""</span>,
-  <span class="hljs-string">"creatorId"</span>:<span class="hljs-string">""</span>,
-  <span class="hljs-string">"creatorName"</span>:<span class="hljs-string">""</span>,
-  <span class="hljs-string">"carousels"</span>:<span class="hljs-string">""</span>,
-  <span class="hljs-string">"shareMedias"</span>:<span class="hljs-string">""</span>,
+  "id":"2",
+  "title":"闪亮童年，云秀风采",
+  "description":"",
+  "medias":"",
+  "creatorId":"",
+  "creatorName":"",
+  "carousels":"",
+  "shareMedias":"",
 
-  <span class="hljs-string">"subjectId"</span>:<span class="hljs-string">""</span>,
-  <span class="hljs-string">"subjectName"</span>:<span class="hljs-string">""</span>,
-   <span class="hljs-string">"colorId"</span>:<span class="hljs-string">""</span>,
-  <span class="hljs-string">"colorName"</span>:<span class="hljs-string">""</span>,
+  "subject":{
+    "id":"",
+    "name":""
+  },
+   "color":{
+    "id":"",
+    "name":""
+  },
+  "voteTime":{
+    "begin":0,
+    "end":0
+  },
+  "joinTime":{
+    "begin":0,
+    "end":0
+  },
+  "require":{
+    "name":0,
+    "photo":0,
+    "video":0,
+    "phone":0,
+    "wechat":0
+  },
+  "sponsor":{
+    "name":"",
+    "logo":"",
+    "phone":"",
+    "twoCode":""
+  },
+  "voteTimes":{
+    "voteTimesType":"",
+    "voteTimes":0
+  },
+  "selector":{
+    selectBeginCount":0,
+    "selectEndCount":0
+  },
+  "address":{
+    "province":"",
+    "city":"",
+    "area":""
+  },
 
-  <span class="hljs-string">"voteStartTime"</span>,<span class="hljs-number">0</span>,
-  <span class="hljs-string">"voteEndTime"</span>,<span class="hljs-number">0</span>,
-
-  <span class="hljs-string">"joinStartTime"</span>,<span class="hljs-number">0</span>,
-  <span class="hljs-string">"joinEndTime"</span>,<span class="hljs-string">""</span>,
-
-  <span class="hljs-string">"requireName"</span>,<span class="hljs-number">0</span>,
-  <span class="hljs-string">"requirePhoto"</span>,<span class="hljs-number">0</span>,
-  <span class="hljs-string">"requireVideo"</span>,<span class="hljs-number">0</span>,
-  <span class="hljs-string">"requirePhone"</span>,<span class="hljs-number">0</span>,
-  <span class="hljs-string">"requireWechat"</span>,<span class="hljs-number">0</span>,
-
-  <span class="hljs-string">"sponsorName"</span>,<span class="hljs-string">""</span>,
-  <span class="hljs-string">"sponsorLogo"</span>,<span class="hljs-string">""</span>,
-  <span class="hljs-string">"sponsorPhone"</span>,<span class="hljs-string">""</span>,
-  <span class="hljs-string">"sponsor2Code"</span>,<span class="hljs-string">""</span>,
-  <span class="hljs-string">"voteTimesType"</span>,<span class="hljs-string">""</span>,
-  <span class="hljs-string">"voteTimes"</span>,<span class="hljs-number">0</span>,
-
-  <span class="hljs-string">"selectBeginCount"</span>,<span class="hljs-number">0</span>,
-  <span class="hljs-string">"selectEndCount"</span>,<span class="hljs-number">0</span>,
-
-  <span class="hljs-string">"limitProvince"</span>,<span class="hljs-string">""</span>,
-  <span class="hljs-string">"limitCity"</span>,<span class="hljs-string">""</span>,
-  <span class="hljs-string">"limitArea"</span>,<span class="hljs-string">""</span>,
-  <span class="hljs-string">"limitIpVoteTimes"</span>,
-
-  <span class="hljs-string">"drawLuck"</span>,<span class="hljs-literal">false</span>,
-  <span class="hljs-string">"activityNotice"</span>,<span class="hljs-string">""</span>,
-  <span class="hljs-string">"createTime"</span>:<span class="hljs-string">"2020-09-11T02:09:11.000+0000"</span>
+  "limitIpVoteTimes":0,
+  "drawLuck":false,
+  "activityNotice":"",
+  "createTime":"2020-09-11T02:09:11.000+0000"
 }
 
 ],
-<span class="hljs-string">"pageable"</span>: {
-  <span class="hljs-string">"sort"</span>: {
-      <span class="hljs-string">"sorted"</span>: <span class="hljs-literal">false</span>,
-      <span class="hljs-string">"unsorted"</span>: <span class="hljs-literal">true</span>,
-      <span class="hljs-string">"empty"</span>: <span class="hljs-literal">true</span>
+"pageable": {
+  "sort": {
+      "sorted": false,
+      "unsorted": true,
+      "empty": true
   },
-  <span class="hljs-string">"pageNumber"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-string">"pageSize"</span>: <span class="hljs-number">10</span>,
-  <span class="hljs-string">"offset"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-string">"paged"</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-string">"unpaged"</span>: <span class="hljs-literal">false</span>
+  "pageNumber": 0,
+  "pageSize": 10,
+  "offset": 0,
+  "paged": true,
+  "unpaged": false
 },
-<span class="hljs-string">"totalPages"</span>: <span class="hljs-number">3</span>,
-<span class="hljs-string">"totalElements"</span>: <span class="hljs-number">24</span>,
-<span class="hljs-string">"last"</span>: <span class="hljs-literal">false</span>,
-<span class="hljs-string">"first"</span>: <span class="hljs-literal">true</span>,
-<span class="hljs-string">"sort"</span>: {
-  <span class="hljs-string">"sorted"</span>: <span class="hljs-literal">false</span>,
-  <span class="hljs-string">"unsorted"</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-string">"empty"</span>: <span class="hljs-literal">true</span>
+"totalPages": 3,
+"totalElements": 24,
+"last": false,
+"first": true,
+"sort": {
+  "sorted": false,
+  "unsorted": true,
+  "empty": true
 },
-<span class="hljs-string">"size"</span>: <span class="hljs-number">10</span>,
-<span class="hljs-string">"number"</span>: <span class="hljs-number">0</span>,
-<span class="hljs-string">"numberOfElements"</span>: <span class="hljs-number">10</span>,
-<span class="hljs-string">"empty"</span>: <span class="hljs-literal">false</span>
+"size": 10,
+"number": 0,
+"numberOfElements": 10,
+"empty": false
 }</code></pre><div style="height: 1px;"></div></div></div></div></div><div id="获取投票" class="resource"><h3 class="resource-heading">获取投票 <a href="#获取投票" class="permalink">&nbsp;&para;</a></h3><div id="获取投票-get" class="action get"><h4 class="action-heading"><div class="name">获取投票详情</div><a href="#获取投票-get" class="method get">GET</a><code class="uri">/vote/v1/get</code></h4><h4>Example URI</h4><div class="definition"><span class="method get">GET</span>&nbsp;<span class="uri"><span class="hostname"></span>/vote/v1/get</span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>投票id,字符串 必填</p>
 </dd></dl></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
-  "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-string">"1"</span></span>,
-  "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"闪亮童年，云秀风采"</span></span>,
-  "<span class="hljs-attribute">endTime</span>": <span class="hljs-value"><span class="hljs-string">"2020-09-11T02:09:11.000+0000"</span></span>,
-  "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
-  "<span class="hljs-attribute">medias</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
-  "<span class="hljs-attribute">visiteCount</span>": <span class="hljs-value"><span class="hljs-number">1001232</span></span>,
-  "<span class="hljs-attribute">totalVoteCount</span>": <span class="hljs-value"><span class="hljs-number">989829</span></span>,
-  "<span class="hljs-attribute">SignUpCount</span>": <span class="hljs-value"><span class="hljs-number">36</span>
-</span>}</code></pre><div style="height: 1px;"></div></div></div></div></div><div id="参加投票" class="resource"><h3 class="resource-heading">参加投票 <a href="#参加投票" class="permalink">&nbsp;&para;</a></h3><div id="参加投票-post" class="action post"><h4 class="action-heading"><div class="name">参加投票</div><a href="#参加投票-post" class="method post">POST</a><code class="uri">/vote/v1/join</code></h4><h4>Example URI</h4><div class="definition"><span class="method post">POST</span>&nbsp;<span class="uri"><span class="hostname"></span>/vote/v1/join</span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>voteId</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>投票编号,字符串 必填</p>
+"id":"1",
+
+"visiteCount":1001232,
+"totalVoteCount":989829,
+"SignUpCount":36
+
+"title":"闪亮童年，云秀风采",
+"description":"",
+"medias":"",
+"creatorId":"",
+"creatorName":"",
+"carousels":"",
+"shareMedias":"",
+
+"subject":{
+"id":"",
+"name":""
+},
+ "color":{
+"id":"",
+"name":""
+},
+"voteTime":{
+"begin":0,
+"end":0
+},
+"joinTime":{
+"begin":0,
+"end":0
+},
+"require":{
+"name":0,
+"photo":0,
+"video":0,
+"phone":0,
+"wechat":0
+},
+"sponsor":{
+"name":"",
+"logo":"",
+"phone":"",
+"twoCode":""
+},
+"voteTimes":{
+"voteTimesType":"",
+"voteTimes":0
+},
+"selector":{
+selectBeginCount":0,
+"selectEndCount":0
+},
+"address":{
+"province":"",
+"city":"",
+"area":""
+},
+
+"limitIpVoteTimes":0,
+"drawLuck":false,
+"activityNotice":"",
+"createTime":"2020-09-11T02:09:11.000+0000"
+}</code></pre><div style="height: 1px;"></div></div></div></div></div><div id="参加投票" class="resource"><h3 class="resource-heading">参加投票 <a href="#参加投票" class="permalink">&nbsp;&para;</a></h3><div id="参加投票-post" class="action post"><h4 class="action-heading"><div class="name">参加投票</div><a href="#参加投票-post" class="method post">POST</a><code class="uri">/vote/v1/join</code></h4><h4>Example URI</h4><div class="definition"><span class="method post">POST</span>&nbsp;<span class="uri"><span class="hostname"></span>/vote/v1/join</span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>voteId</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>投票编号,字符串 必填</p>
 </dd><dt>name</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>所需名称, 字符串 必填</p>
 </dd><dt>photo</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>所需图片, 字符串（0:必填,1:选填,2:隐藏） 必填</p>
 </dd><dt>video</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>所需短视频（90s内）,字符串</p>
@@ -371,7 +447,7 @@
   "<span class="hljs-attribute">voterId</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
   "<span class="hljs-attribute">voterName</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
   "<span class="hljs-attribute">ip</span>": <span class="hljs-value"><span class="hljs-string">""</span>
-</span>}</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{}</code></pre><div style="height: 1px;"></div></div></div></div></div></section></div></div></div><p style="text-align: center;" class="text-muted">Generated by&nbsp;<a href="https://github.com/danielgtaylor/aglio" class="aglio">aglio</a>&nbsp;on 16 Jun 2020</p><script>/* eslint-env browser */
+</span>}</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{}</code></pre><div style="height: 1px;"></div></div></div></div></div></section></div></div></div><p style="text-align: center;" class="text-muted">Generated by&nbsp;<a href="https://github.com/danielgtaylor/aglio" class="aglio">aglio</a>&nbsp;on 17 Jun 2020</p><script>/* eslint-env browser */
 /* eslint quotes: [2, "single"] */
 'use strict';
 
