@@ -734,7 +734,7 @@
 
 ## 获取投票参与者 [/vote/v1/player/get]
 
-### 获取投票参与者列表 [GET]
+### 获取投票参与者 [GET]
 
 + Parameters
   + id (string,required) - 投票参与编号, 字符串 必填
