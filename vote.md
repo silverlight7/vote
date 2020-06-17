@@ -449,8 +449,8 @@
 ### 参加投票 [POST]
 
 + Parameters
+
   + voteId (string,required) - 投票编号,字符串 必填
-  
   + name (string,required) -  所需名称, 字符串 必填
   + photo (string,required) -  所需图片, 字符串 必填
   + video (string,required) -  所需短视频（90s内）,字符串
@@ -483,7 +483,7 @@
 
 
 
-## 获取投票参与者列表 [/vote/v1/get_players]
+## 获取投票参与者列表 [/vote/v1/player/get_list]
 
 ### 获取投票参与者列表 [GET]
 
@@ -491,66 +491,62 @@
   + voteId (string,required) - 投票编号, 字符串 必填
 
 + Response 200 (application/json)
-{
-  "content":[
-    {
-      "id":"1",
-      "voteId":"1",
-      "name":"三（6）班 刘文瀚",
-      "code":"36",
-      "photo":"",
-      "video":"",
-      "wechat":"",
-      "creator":{
-        "id":"",
-        "name":""
-      }
-      "voteCount":320
-    },
-       {
-      "id":"2",
-      "voteId":"1",
-      "name":"三（6）班 李佳琪",
-      "code":"35",
-      "photo":"",
-      "video":"",
-      "wechat":"",
-      "creator":{
-        "id":"",
-        "name":""
-      }
-      "voteCount":320
+[
+  {
+    "id":"1",
+    "voteId":"1",
+    "name":"三（6）班 刘文瀚",
+    "code":"36",
+    "photo":"",
+    "video":"",
+    "wechat":"",
+    "creator":{
+      "id":"",
+      "name":""
     }
-  ],
-  "pageable": {
-      "sort": {
-          "sorted": false,
-          "unsorted": true,
-          "empty": true
-      },
-      "pageNumber": 0,
-      "pageSize": 10,
-      "offset": 0,
-      "paged": true,
-      "unpaged": false
+    "voteCount":320
   },
-  "totalPages": 3,
-  "totalElements": 24,
-  "last": false,
-  "first": true,
-  "sort": {
-      "sorted": false,
-      "unsorted": true,
-      "empty": true
-  },
-  "size": 10,
-  "number": 0,
-  "numberOfElements": 10,
-  "empty": false
+      {
+    "id":"2",
+    "voteId":"1",
+    "name":"三（6）班 李佳琪",
+    "code":"35",
+    "photo":"",
+    "video":"",
+    "wechat":"",
+    "creator":{
+      "id":"",
+      "name":""
+    }
+    "voteCount":320
+  }
+]
+
+
+
+## 获取投票参与者 [/vote/v1/player/get]
+
+### 获取投票参与者列表 [GET]
+
++ Parameters
+  + id (string,required) - 投票参与编号, 字符串 必填
+
++ Response 200 (application/json)
+
+{
+  "id":"1",
+  "voteId":"1",
+  "name":"三（6）班 刘文瀚",
+  "code":"36",
+  "photo":"",
+  "video":"",
+  "wechat":"",
+  "creator":{
+    "id":"",
+    "name":""
+  }
+  "voteCount":320
 }
-
-
-
 
 
 ## 我要投票 [/vote/v1/vote]
