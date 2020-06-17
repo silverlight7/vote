@@ -109,6 +109,7 @@
   + subjectName (string,required) - 主题名称, 字符串 
   + colorId (string,required) - 配色id, 字符串 
   + colorName (string,required) - 配色名称, 字符串 
+  + color (string,required) - 配色值, 字符串 
 
   + voteStartTime (long,required) - 投票开始时间, 长整形 必填
   + voteEndTime (long,required) - 投票结束时间, 长整形 必填
@@ -160,6 +161,7 @@
   
   "colorId":"",
   "colorName":"",
+  "color":"",
 
   "voteStartTime":0,
   "voteEndTime":0,
@@ -218,6 +220,7 @@
   + subjectName (string,required) - 主题名称, 字符串 
   + colorId (string,required) - 配色id, 字符串 
   + colorName (string,required) - 配色名称, 字符串 
+  + color (string,required) - 配色值, 字符串 
 
   + voteStartTime (long,required) - 投票开始时间, 长整形 必填
   + voteEndTime (long,required) - 投票结束时间, 长整形 必填
@@ -269,6 +272,7 @@
   
   "colorId":"",
   "colorName":"",
+  "color":"",
 
   "voteStartTime":0,
   "voteEndTime":0,
