@@ -265,7 +265,7 @@
         "voteTimes":0
       },
       "selector":{
-        selectBeginCount":0,
+        "selectBeginCount":0,
         "selectEndCount":0
       },
       "address":{
@@ -452,11 +452,11 @@
 
   + voteId (string,required) - 投票编号,字符串 必填
   + name (string,required) -  所需名称, 字符串 必填
+  + description (string,required) -  所需描述, 字符串 必填
   + photo (string,required) -  所需图片, 字符串 必填
   + video (string,required) -  所需短视频（90s内）,字符串
   + phone (string,required) -  所需手机号, 字符串
   + wechat (string,required) -  所需微信号, 字符串
-
   + userId (string,required) - 参加人id,字符串
   + userName (string,required) - 参加人名称,字符串
    
@@ -464,6 +464,7 @@
 {
   "voteId":"1",
   "name":"",
+  "description":"",
   "photo":"",
   "video":"",
   "phone":"",
@@ -496,6 +497,7 @@
     "id":"1",
     "voteId":"1",
     "name":"三（6）班 刘文瀚",
+    "description":"",
     "code":"36",
     "photo":"",
     "video":"https://files.jiyunkeji.com.cn/9d05aad5-1791-4ee2-9ca1-451fdd3589d7",
@@ -504,12 +506,14 @@
       "id":"",
       "name":""
     },
-    "voteCount":320
+    "voteCount":320, 
+    "createTime":"2020-09-11T02:09:11.000+0000"
   },
       {
     "id":"2",
     "voteId":"1",
     "name":"三（6）班 李佳琪",
+    "description":"",
     "code":"35",
     "photo":"",
     "video":"https://files.jiyunkeji.com.cn/9d05aad5-1791-4ee2-9ca1-451fdd3589d7",
@@ -518,12 +522,14 @@
       "id":"",
       "name":""
     },
-    "voteCount":340
+    "voteCount":340, 
+    "createTime":"2020-09-11T02:09:11.000+0000"
   },
       {
     "id":"3",
     "voteId":"1",
     "name":"三（6）班 大样",
+    "description":"",
     "code":"35",
     "photo":"",
     "video":"https://files.jiyunkeji.com.cn/9d05aad5-1791-4ee2-9ca1-451fdd3589d7",
@@ -532,12 +538,14 @@
       "id":"",
       "name":""
     },
-    "voteCount":220
+    "voteCount":220, 
+    "createTime":"2020-09-11T02:09:11.000+0000"
   },
       {
     "id":"4",
     "voteId":"1",
     "name":"三（6）班 老梗",
+    "description":"",
     "code":"35",
     "photo":"",
     "video":"https://files.jiyunkeji.com.cn/9d05aad5-1791-4ee2-9ca1-451fdd3589d7",
@@ -546,12 +554,14 @@
       "id":"",
       "name":""
     },
-    "voteCount":620
+    "voteCount":620, 
+    "createTime":"2020-09-11T02:09:11.000+0000"
   },
       {
     "id":"5",
     "voteId":"1",
     "name":"三（6）班 小明",
+    "description":"",
     "code":"35",
     "photo":"",
     "video":"https://files.jiyunkeji.com.cn/9d05aad5-1791-4ee2-9ca1-451fdd3589d7",
@@ -560,12 +570,14 @@
       "id":"",
       "name":""
     },
-    "voteCount":420
+    "voteCount":420, 
+    "createTime":"2020-09-11T02:09:11.000+0000"
   },
       {
     "id":"6",
     "voteId":"1",
     "name":"三（6）班 张佳佳",
+    "description":"",
     "code":"35",
     "photo":"",
     "video":"https://files.jiyunkeji.com.cn/9d05aad5-1791-4ee2-9ca1-451fdd3589d7",
@@ -574,7 +586,8 @@
       "id":"",
       "name":""
     },
-    "voteCount":120
+    "voteCount":120, 
+    "createTime":"2020-09-11T02:09:11.000+0000"
   }
 ]
 
