@@ -503,7 +503,7 @@
     "creator":{
       "id":"",
       "name":""
-    }
+    },
     "voteCount":320
   },
       {
@@ -517,7 +517,7 @@
     "creator":{
       "id":"",
       "name":""
-    }
+    },
     "voteCount":320
   }
 ]
