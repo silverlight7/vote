@@ -14,7 +14,7 @@
 } -->
 
 
-## 获取主题 [/vote/v1/get_subjects]
+## 获取主题 [/vote/v1/subject/get_list]
 
 ### 获取主题 [GET]
 
@@ -42,7 +42,7 @@
 
 
 
-## 获取配色 [/vote/v1/get_colors]
+## 获取配色 [/vote/v1/color/get_list]
 
 ### 获取配色 [GET]
 
