@@ -387,7 +387,7 @@
   "medias":"",
   "visiteCount":1001232,
   "totalVoteCount":989829,
-  "SignUpCount":36
+  "SignUpCount":36,
   "creatorId":"",
   "creatorName":"",
   "carousels":"",
@@ -428,7 +428,7 @@
     "voteTimes":0
   },
   "selector":{
-    selectBeginCount":0,
+    "selectBeginCount":0,
     "selectEndCount":0
   },
   "address":{
