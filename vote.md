@@ -498,7 +498,7 @@
     "name":"三（6）班 刘文瀚",
     "code":"36",
     "photo":"",
-    "video":"",
+    "video":"https://files.jiyunkeji.com.cn/9d05aad5-1791-4ee2-9ca1-451fdd3589d7",
     "wechat":"",
     "creator":{
       "id":"",
@@ -512,13 +512,69 @@
     "name":"三（6）班 李佳琪",
     "code":"35",
     "photo":"",
-    "video":"",
+    "video":"https://files.jiyunkeji.com.cn/9d05aad5-1791-4ee2-9ca1-451fdd3589d7",
     "wechat":"",
     "creator":{
       "id":"",
       "name":""
     },
-    "voteCount":320
+    "voteCount":340
+  },
+      {
+    "id":"3",
+    "voteId":"1",
+    "name":"三（6）班 大样",
+    "code":"35",
+    "photo":"",
+    "video":"https://files.jiyunkeji.com.cn/9d05aad5-1791-4ee2-9ca1-451fdd3589d7",
+    "wechat":"",
+    "creator":{
+      "id":"",
+      "name":""
+    },
+    "voteCount":220
+  },
+      {
+    "id":"4",
+    "voteId":"1",
+    "name":"三（6）班 老梗",
+    "code":"35",
+    "photo":"",
+    "video":"https://files.jiyunkeji.com.cn/9d05aad5-1791-4ee2-9ca1-451fdd3589d7",
+    "wechat":"",
+    "creator":{
+      "id":"",
+      "name":""
+    },
+    "voteCount":620
+  },
+      {
+    "id":"5",
+    "voteId":"1",
+    "name":"三（6）班 小明",
+    "code":"35",
+    "photo":"",
+    "video":"https://files.jiyunkeji.com.cn/9d05aad5-1791-4ee2-9ca1-451fdd3589d7",
+    "wechat":"",
+    "creator":{
+      "id":"",
+      "name":""
+    },
+    "voteCount":420
+  },
+      {
+    "id":"6",
+    "voteId":"1",
+    "name":"三（6）班 张佳佳",
+    "code":"35",
+    "photo":"",
+    "video":"https://files.jiyunkeji.com.cn/9d05aad5-1791-4ee2-9ca1-451fdd3589d7",
+    "wechat":"",
+    "creator":{
+      "id":"",
+      "name":""
+    },
+    "voteCount":120
   }
 ]
 
@@ -539,12 +595,12 @@
   "name":"三（6）班 刘文瀚",
   "code":"36",
   "photo":"",
-  "video":"",
+  "video":"https://files.jiyunkeji.com.cn/9d05aad5-1791-4ee2-9ca1-451fdd3589d7",
   "wechat":"",
   "creator":{
     "id":"",
     "name":""
-  }
+  },
   "voteCount":320
 }
 
