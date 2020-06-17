@@ -47,31 +47,47 @@
 ### 获取配色 [GET]
 
 + Response 200 (application/json)
-[{
-  "id":"1",
-  "name":"模板-蓝"
-},{
-  "id":"2",
-  "name":"模板-红"
-},{
-  "id":"3",
-  "name":"模板-绿"
-},{
-  "id":"4”,
-  "name":"模板-橘"
-},{
-  "id":"5",
-  "name":"模板-黑金"
-},{
-  "id":"6",
-  "name":"模板-白蓝"
-},{
-  "id":"7",
-  "name":"模板-橘红"
-},{
-  "id":"8",
-  "name":"模板-酒红"
-}
+[
+  {
+    "id": "1",
+    "name": "模板-蓝",
+    "color": "#6193f4"
+  },
+  {
+    "id": "2",
+    "name": "模板-红",
+    "color": "#e86865"
+  },
+  {
+    "id": "3",
+    "name": "模板-绿",
+    "color": "#70c395"
+  },
+  {
+    "id": "4",
+    "name": "模板-橘",
+    "color": "#f2a763"
+  },
+  {
+    "id": "5",
+    "name": "模板-黑金",
+    "color": "#333333"
+  },
+  {
+    "id": "6",
+    "name": "模板-白蓝",
+    "color": "#ffffff"
+  },
+  {
+    "id": "7",
+    "name": "模板-橘红",
+    "color": "#d35944"
+  },
+  {
+    "id": "8",
+    "name": "模板-酒红",
+    "color": "#d43055"
+  }
 ]
 
 
@@ -94,7 +110,6 @@
 
   + voteStartTime (long,required) - 投票开始时间, 长整形 必填
   + voteEndTime (long,required) - 投票结束时间, 长整形 必填
-  + endTime (long,required) - 截止时间, 长整形 必填
 
   + joinStartTime (long,required) - 报名开始时间, 长整形
   + joinEndTime (long,required) -  报名结束时间, 长整形
@@ -215,41 +230,53 @@
       "carousels":"",
       "shareMedias":"",
 
-      "subjectId":"",
-      "subjectName":"",
+      "subject":{
+        "id":"",
+        "name":""
+      },
       
-      "colorId":"",
-      "colorName":"",
+      "color":{
+        "id":"",
+        "name":""
+      },
+      "voteTime":{
+        "begin":0,
+        "end":0
+      },
+      "joinTime":{
+        "begin":0,
+        "end":0
+      },
+      "require":{
+        "name":0,
+        "photo":0,
+        "video":0,
+        "phone":0,
+        "wechat":0
+      },
+      "sponsor":{
+        "name":"",
+        "logo":"",
+        "phone":"",
+        "twoCode":""
+      },
+      "voteTimes":{
+        "voteTimesType":"",
+        "voteTimes":0
+      },
+      "selector":{
+        selectBeginCount":0,
+        "selectEndCount":0
+      },
+      "address":{
+        "province":"",
+        "city":"",
+        "area":""
+      },
 
-      "voteStartTime",0,
-      "voteEndTime",0,
-
-      "joinStartTime",0,
-      "joinEndTime","",
-
-      "requireName",0,
-      "requirePhoto",0,
-      "requireVideo",0,
-      "requirePhone",0,
-      "requireWechat",0,
-
-      "sponsorName","",
-      "sponsorLogo","",
-      "sponsorPhone","",
-      "sponsor2Code","",
-      "voteTimesType","",
-      "voteTimes",0,
-
-      "selectBeginCount",0,
-      "selectEndCount",0,
-
-      "limitProvince","",
-      "limitCity","",
-      "limitArea","",
-      "limitIpVoteTimes",
-
-      "drawLuck",false,
-      "activityNotice","",
+      "limitIpVoteTimes":0,
+      "drawLuck":false,
+      "activityNotice":"",
       "createTime":"2020-09-11T02:09:11.000+0000"
     },
      {
@@ -262,41 +289,53 @@
       "carousels":"",
       "shareMedias":"",
 
-      "subjectId":"",
-      "subjectName":"",
+      "subject":{
+        "id":"",
+        "name":""
+      },
       
-      "colorId":"",
-      "colorName":"",
+      "color":{
+        "id":"",
+        "name":""
+      },
+      "voteTime":{
+        "begin":0,
+        "end":0
+      },
+      "joinTime":{
+        "begin":0,
+        "end":0
+      },
+      "require":{
+        "name":0,
+        "photo":0,
+        "video":0,
+        "phone":0,
+        "wechat":0
+      },
+      "sponsor":{
+        "name":"",
+        "logo":"",
+        "phone":"",
+        "twoCode":""
+      },
+      "voteTimes":{
+        "voteTimesType":"",
+        "voteTimes":0
+      },
+      "selector":{
+        selectBeginCount":0,
+        "selectEndCount":0
+      },
+      "address":{
+        "province":"",
+        "city":"",
+        "area":""
+      },
 
-      "voteStartTime",0,
-      "voteEndTime",0,
-
-      "joinStartTime",0,
-      "joinEndTime","",
-
-      "requireName",0,
-      "requirePhoto",0,
-      "requireVideo",0,
-      "requirePhone",0,
-      "requireWechat",0,
-
-      "sponsorName","",
-      "sponsorLogo","",
-      "sponsorPhone","",
-      "sponsor2Code","",
-      "voteTimesType","",
-      "voteTimes",0,
-
-      "selectBeginCount",0,
-      "selectEndCount",0,
-
-      "limitProvince","",
-      "limitCity","",
-      "limitArea","",
-      "limitIpVoteTimes",
-
-      "drawLuck",false,
-      "activityNotice","",
+      "limitIpVoteTimes":0,
+      "drawLuck":false,
+      "activityNotice":"",
       "createTime":"2020-09-11T02:09:11.000+0000"
     }
 
@@ -349,6 +388,59 @@
   "visiteCount":1001232,
   "totalVoteCount":989829,
   "SignUpCount":36
+  "creatorId":"",
+  "creatorName":"",
+  "carousels":"",
+  "shareMedias":"",
+
+  "subject":{
+    "id":"",
+    "name":""
+  },
+  
+  "color":{
+    "id":"",
+    "name":""
+  },
+  "voteTime":{
+    "begin":0,
+    "end":0
+  },
+  "joinTime":{
+    "begin":0,
+    "end":0
+  },
+  "require":{
+    "name":0,
+    "photo":0,
+    "video":0,
+    "phone":0,
+    "wechat":0
+  },
+  "sponsor":{
+    "name":"",
+    "logo":"",
+    "phone":"",
+    "twoCode":""
+  },
+  "voteTimes":{
+    "voteTimesType":"",
+    "voteTimes":0
+  },
+  "selector":{
+    selectBeginCount":0,
+    "selectEndCount":0
+  },
+  "address":{
+    "province":"",
+    "city":"",
+    "area":""
+  },
+
+  "limitIpVoteTimes":0,
+  "drawLuck":false,
+  "activityNotice":"",
+  "createTime":"2020-09-11T02:09:11.000+0000"
 }
 
 
