@@ -583,6 +583,40 @@
 }
 
 
+## 修改参加投票信息 [/vote/v1/player/update]
+
+### 修改参加投票信息 [POST]
+
++ Parameters
+
+  + id (string,required) - 参赛编号,字符串 必填
+  + name (string,required) -  所需名称, 字符串 必填
+  + description (string,required) -  所需描述, 字符串 必填
+  + photo (string,required) -  所需图片, 字符串 必填
+  + video (string,required) -  所需短视频（90s内）,字符串
+  + phone (string,required) -  所需手机号, 字符串
+  + wechat (string,required) -  所需微信号, 字符串
+  + userId (string,required) - 参加人id,字符串
+  + userName (string,required) - 参加人名称,字符串
+   
++ Request (application/json)
+{
+  "id":"1",
+  "name":"",
+  "description":"",
+  "photo":"",
+  "video":"",
+  "phone":"",
+  "wechat":"",
+  "userId":"",
+  "userName":""
+}
+
++ Response 200 (application/json)
+{
+}
+
+
 
 
 
