@@ -452,7 +452,7 @@
   + voteId (string,required) - 投票编号,字符串 必填
   
   + name (string,required) -  所需名称, 字符串 必填
-  + photo (string,required) -  所需图片, 字符串（0:必填,1:选填,2:隐藏） 必填
+  + photo (string,required) -  所需图片, 字符串 必填
   + video (string,required) -  所需短视频（90s内）,字符串
   + phone (string,required) -  所需手机号, 字符串
   + wechat (string,required) -  所需微信号, 字符串
