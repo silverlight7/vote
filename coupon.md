@@ -108,7 +108,7 @@
   + ownerId (String,required) - 用户id, 字符串 必填
   + start (int,required) - 开始位置, 整型 必填
   + count (int,required) - 每页显示条数, 整型  必填
-  + status (状态,required) - 状态, 枚举 UnUsed Used
+  + status (状态,required) - 状态, 枚举 None,UnUsed,Used
    
 + Request (application/json)
 {
